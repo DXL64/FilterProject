@@ -60,7 +60,7 @@ Prerequisites: You must have docker before you run it
 
 ```
 docker build -t {{image_name}} .
-docker run -d --name {{container_name}} {{image_name}}
+docker run -dp 7000:7000 --name {{container_name}} {{image_name}}
 ```
 Demo will expose on localhost port 7000
 
