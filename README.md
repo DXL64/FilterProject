@@ -24,7 +24,6 @@ pip install -r requirements.txt
 
 #run setup.py
 python setup.py install --user
-
 ```
 Apply filter on image
 
@@ -44,7 +43,6 @@ python -m src.filter.filter_video
 # source = 0 for webcam
 # source = $path for your video path
 # Result will save in ./test/result if you run for video
-
 ```
 
 ### Run demo on Gradio
@@ -53,7 +51,6 @@ You must activate conda enviroment py38_filter before run
 
 ```
 python app.py
-
 ```
 Your demo will public on local address : 0.0.0.0:7000 and public on url that Gradio show on terminal
 
@@ -64,7 +61,6 @@ Prerequisites: You must have docker before you run it
 ```
 docker build -t {{image_name}} .
 docker run -d --name {{container_name}} {{image_name}}
-
 ```
 Demo will expose on localhost port 7000
 
@@ -72,7 +68,6 @@ You can excute to container is running and run manually
 
 ```
 docker exec -it {{container_name}} bash
-
 ```
 
 
